@@ -1,0 +1,9 @@
+self-practice02
+week นี้ เน้นไปที่เรื่อง object เป็นการเขียนอ้างถึง key/value ข้างใน object
+โดยข้อ function shallowEquality จะมีการตั้ง keys1(เป็น key ของ object1) และ keys2(เป็น key ของ object2)  ถ้า 2 keys นี้มีความยาวไม่เท่ากัน หรือก็คือ key ของ book1&book2 ไม่เท่ากัน จะ return false และให้วนลูปใน keys1 โดยใช้ key(for...of) ถ้า key ของ object1&object2 ไม่เท่ากัน ก็จะ return false เหมือนกัน ถ้าไม่เข้าเงื่อนไขเหล่านี้ก็จะ return true
+
+ข้อ 1 ตรวจคะแนนของนักเรียนหากมากกว่าหรือเท่ากับ50ให้ผ่าน โดยสร้าง function checkPass ที่รับ object student เข้ามาเป็น argument โดยมี name, score,pass 
+เริ่มโดยสร้าง function checkPass(studentObj) ถ้า studentObj.score >- 50 studentObj.pass จะเป็น true
+
+ข้อ 2 นับจำนวน key ของ property ที่มีชนิดค่าเป็น 'string' และ 'number' โดยคืนค่าเป็น object และตั้งชื่อ function  เป็น 'countStringsAndNumbers' ที่รับ object data เข้ามา
+ เริ่มโดยสร้าง function countStringsAndNumbers(dataObj) จากนั้นสร้าง counts ที่มี object key เป็น string และ number จากนั้นให้ลูปใน dataObj โดยใช้ key(for...in) ถ้า typeof key ใน dataObj === 'string' counts.string จะเพิ่มขึ้นทีละหนึ่ง แต่ถ้า typeof === 'number' counts.number จะเพิ่มขึ้นทีละหนึ่ง
