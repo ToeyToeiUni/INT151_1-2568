@@ -1,0 +1,8 @@
+week04 ให้สร้าง Arrow function: addNumbers ที่รับอาร์เรย์ของตัวเลขแล้วคืนค่าผลรวม 
+โดยเราจะสร้าง function addNumbers มีพารามิเตอร์เป็น number และสร้างตัวแปร total = 0(ไว้เก็บผลลัพธ์) จากนั้นจะใช้ for เพื่อลูปตัวแปร i ใน number และให้ total += i (บวกค่า i ไว้ใน total)
+
+ให้สร้าง Arrow function: doubleValues รับอาร์เรย์ของตัวเลขแล้วคืนค่าอาร์เรย์ใหม่ที่มีค่าเป็นสองเท่าของแต่ละตัว
+เริ่มจากสร้าง function multiply มีพารามิเตอร์เป็น number และสร้าวตัวแปรให้ total = number.map(doubleValues => doubleValues * 2); (ให้ค่า * 2 ทั้งหมดใน number; map = การเปลี่ยนแปลงค่าทั้งหมดในนั้นตามเงื่อนไข) 
+
+ให้สร้าง Arrow function: calculateFinalScore รับอาร์เรย์ของ students แล้วคืนค่าเป็นค่าเฉลี่ย ที่หารด้วยคะแนนทั้งหมดของนักเรียนในคลาส science และจำนวนของนักเรียนในคลาส science
+ให้สร้าง Arrow function: calculateFinalScore มีพารามิเตอร์เป็น students จากนั้นสร้างตัวแปร scienceStudents เพื่อ filter หา student ที่อยู่ใน class 'Science' เท่านั้น จากนั้นสร้างตัวแปร totalScore เพื่อเอา นักเรียนจาก class 'Science' ที่ filter มา(scienceStudents) นำมา reduce รวม score ทั้งหมดของนักเรียนที่ filter มา จากนั้นนำ totalScore มาหารด้วย scienceStudents.length(จำนวนนักเรียนใน class)
